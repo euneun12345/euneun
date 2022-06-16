@@ -8,7 +8,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(led, GPIO.OUT)
 
 client = mqtt.Client()
-client.connect("119.200.109.51", 1883, 60)
+client.connect("172.16.14.7", 1883, 60)
 client.loop_start()
 client.subscribe("led")
 
